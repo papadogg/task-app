@@ -86,7 +86,6 @@ export const editTask = (task) => {
     form.append('signature', hash);
     axios.post(`https://uxcandy.com/~shapoval/test-task-backend/edit/${id}?developer=vsorochuk`, form)
     .then(res => {
-      console.log(res);
       dispatch(fetchTasks());
     }).catch(e => {
        console.log(e);
