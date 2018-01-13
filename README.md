@@ -1,1 +1,1 @@
-list app
+npm install - npm start
